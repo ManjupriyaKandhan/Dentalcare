@@ -1,0 +1,17 @@
+.wholepart{
+    background-color: #D2A2D6;
+}
+.para1{
+    color: darkmagenta;
+    letter-spacing:1px;
+}
+.para2{
+    color:darkmagenta
+}
+.btn{
+    background-color: darkmagenta;
+    color: white;
+    border-radius: 12px;
+    padding: 10px;
+
+}

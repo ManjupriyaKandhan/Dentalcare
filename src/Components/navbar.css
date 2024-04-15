@@ -1,0 +1,41 @@
+.Navbar{
+    display: flex;
+    padding: 16px;
+  
+    background-color:#D2A2D6;
+
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 60%;
+   
+}
+
+.nav-logo p{
+    color:white;
+    font-size: 28px;
+    font-weight: 600;
+    font-style: italic;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color:white;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.nav-menu hr{
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: white;
+   
+
+}
