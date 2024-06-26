@@ -7,7 +7,7 @@ function Home() {
   return (
     <div className='wholepart'>
 
-    <div className='container mt-5'>
+    <div className='container'>
         <div className='row'>
             <div className='col-6'>
             <h5 className='para1 mt-4'>WELCOME TO SMILY BLOOM DENTAL CARE</h5>
@@ -27,6 +27,7 @@ function Home() {
             </div>
 
     </div>
+    
     </div>
   )
 }

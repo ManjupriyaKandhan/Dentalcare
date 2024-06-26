@@ -1,41 +1,54 @@
-import React, { useState } from 'react'
-import tooth from '../images/tooth.png'
+import React from 'react';
+import './navbar.css';
 import { Link } from 'react-router-dom';
-import './navbar.css'
 
-function Navbar() {
 
-    const[menu, setMenu]=useState("shop");
 
-  return (
-    <div>
-        <div className='Navbar'>
-            <div className='nav-logo'>
-                <img src={tooth} alt='' />
-                <p>SMILY BLOOM DENTAL CLINIC</p>
-            </div>
-            <ul className='nav-menu'>
-              <Link to={'/'}>
-                <li onClick={()=>{setMenu("home")}}>Home{menu==="home"?<hr/>:""}</li>
-                </Link>
+ 
+ function Navbar() {
 
-                <Link to={'/about'}>
-                <li onClick={()=>{setMenu("about")}}>About Us{menu==="about"?<hr/>:""}</li>
-                </Link>
+  const hamburger = document.querySelector('.hamburger');
+  const Navbar = document.querySelector('ul');
 
-                <Link to={'/services'}>
-                <li onClick={()=>{setMenu("services")}}>Services{menu==="services"?<hr/>:""}</li>
-                </Link>
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('slide');
+  });
 
-                <Link to={'/Contact'}>
-                <li onClick={()=>{setMenu("contact")}}>Contact{menu==="contact"?<hr/>:""}</li> 
-                </Link>
 
-            </ul>
-           
-    </div>
-    </div>
-  )
-}
+   return (
+    <nav className='nav'>
+      <span>Blessy Dental Care</span>
 
-export default Navbar
+
+      <ul className='items'>
+      <Link to={'/'}>
+        <li><a href='#'>Home</a></li>
+        </Link>
+
+        <Link to={'/about'}>
+
+        <li><a href='#'>about</a></li>
+        </Link>
+
+        <Link to={'/services'}>
+        <li><a href='#'>Services</a></li>
+        </Link>
+
+        <Link to={'/contact'}>
+        <li><a href='#'>Contact</a></li>
+        </Link>
+      </ul>
+
+
+      <div className='hamburger'>
+        <span className='line'></span>
+        <span className='line'></span>
+        <span className='line'></span>  
+      </div>
+
+
+      </nav>
+   )
+ }
+ 
+ export default Navbar               
